@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Formulaire de commentaire </title>
+		<meta charset ="utf-8" />
+	</head>
+	<body>
+        <!-- LOGIN -->
+		<h1> Inscris-toi ! </h1>
+		<form name="form1" method="post" action="ajout_utilisateur_post.php">
+            <p> Login
+            <br />
+                <input id="login" type="text" name="identifiant" size="15" maxlength="30" required="required"/>
+            </p>
+            
+            <!-- MOT DE PASSE -->
+            <p> Mot de passe
+            <br />
+                <input id="mdp" type="password" name="mdp" required="required"/>
+            </p>
+            
+            <!-- MAJEUR -->
+            <p> Majeur
+            </br>
+                <select id="maj" name="majeur">
+                    <option value="1"> Oui </option>
+                    <option value="0"> Non </option>
+                </select> 
+            </p>
+            
+            <!-- SEXE -->
+            <p> Type
+            <br />
+                <label> <input type="radio" name="genre" value="F" /> Femme </label>
+                <label> <input type="radio" name="genre" value="H" /> Homme </label>
+            </p>
+            
+            <!-- OPTIONS -->
+            <p> Options
+            </br>
+                <label> <input type="checkbox" name="lettre" value="1"/> Lettre de nouvelle </label>
+                <label> <input type="checkbox" name="membre" value="1" /> Membre de soutien </label>
+            </p>
+            <input type="submit" value="S'inscrire" />
+        </form>
+	</body>
+</html>	
