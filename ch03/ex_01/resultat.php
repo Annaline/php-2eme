@@ -8,8 +8,8 @@
  */
 // Variables
 //
-$prixMaison   = $_POST['prix'];
-$fondsPropres = $_POST['fonds'];
+$prixMaison    = $_POST['prix']; // $prixMaison = filter_input(INPUT_POST, 'prixMaison', FILTER_SANITIZE_NUMBER_FLOAT);
+$fondsPropres  = $_POST['fonds'];
 
 $montantMin    = $prixMaison * 0.2;
 $pretTxUnique  = $prixMaison * 0.5;
@@ -18,6 +18,11 @@ $premierRang   = $pret * 0.2;
 $deuxiemeRang  = $pret * 0.8;
 $interets1Rang = $premierRang * 3.5/100;
 $interets2Rang = $deuxiemeRang * 2.5/100;
+
+$prixMaison_ok    = TRUE;
+$fonds_propres_ok = TRUE;
+$prixMaison       = filter_input(INPUT_POST, 'prixMaison', FILTER_SANITIZE_NUMBER_FLOAT);
+$fondsPropres     = filter_input(INPUT_POST, 'fondsPropres', FILTER_SANITIZE_NUMBER_FLOAT);
 
 ?>
 <!DOCTYPE html>

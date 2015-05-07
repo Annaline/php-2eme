@@ -26,12 +26,13 @@
     echo "<br>";
     echo "<br>";
    }
-   
-/* On ne peut pas utiliser WHILE puisqu'on sait qu'on doit s'arrêter à 20, non ? 
-   while () {
-    echo
+  
+$i = 0;
+
+   while ($i <= 20) {
+    $i = $i +2;
    }
-*/
+
 ?>
 
 </body>
